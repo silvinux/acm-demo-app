@@ -17,6 +17,8 @@ spec:
         role: master
         tier: backend
     spec:
+      serviceAccount: guestbook-sa
+      serviceAccountName: guestbook-sa
       containers:
       - name: master
         image: k8s.gcr.io/redis:e2e
